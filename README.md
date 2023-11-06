@@ -4,10 +4,11 @@ This repository contains multiple projects completed in C++ and GLSL, following 
 
 ### 1. Parallax Mapping
 
-![Parallax Mapping](parallaxMapping.gif)
+![Parallax Mapping](GIFs/parallaxMapping.gif)
+
 <div style="display: flex; justify-content: space-between;">
-   <img src="simpleBrickWall.gif" alt="Simple Brick Wall" width="49%">
-   <img src="woodenshapes.gif" alt="Wooden Shapes" width="49%" >
+   <img src="GIFs/simpleBrickWall.gif" alt="Simple Brick Wall" width="49%">
+   <img src="GIFs/woodenshapes.gif" alt="Wooden Shapes" width="49%" >
 </div>
 
 ## Parallax Mapping
