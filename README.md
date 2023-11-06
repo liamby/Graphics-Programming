@@ -4,13 +4,13 @@ This repository contains multiple projects completed in C++ and GLSL, following 
 
 ### 1. Parallax Mapping
    
-   ![Parallax Mapping](parallaxMapping.gif)
+   ![Parallax Mapping](GIFs/parallaxMapping.gif)
    <div style="display: flex; justify-content: space-between;">
     <div style="flex: 49%;">
-        <img src="woodenshapes.gif" alt="Wooden Shapes" width="100%">
+        <img src="GIFs/woodenshapes.gif" alt="Wooden Shapes" width="100%">
     </div>
     <div style="flex: 49%;">
-        <img src="simpleBrickWall.gif" alt="Simple Brick Wall" width="100%">
+        <img src="GIFs/simpleBrickWall.gif" alt="Simple Brick Wall" width="100%">
     </div>
 </div>
 
@@ -30,43 +30,43 @@ In summary, parallax mapping, steep parallax mapping, and parallax occlusion map
 
 ### 2. Transmittance Effects, Refraction, Chromatic Aberration, Fresnel Reflectance
    
-   ![Transmittance Effects, Refraction, Chromatic Aberration, Fresnel Reflectance](TransmittanceEffectsRefractionChromaticabarationFresnelReflectance.gif)
+   ![Transmittance Effects, Refraction, Chromatic Aberration, Fresnel Reflectance](GIFs/TransmittanceEffectsRefractionChromaticabarationFresnelReflectance.gif)
    
 This project demonstrates various optical effects of light interacting with transparent materials such as transmittance, refraction, chromatic aberration, and Fresnel reflectance.
 
 ### 3. Breakout Game
    
-   ![Breakout Game](BreakoutGame.gif)
+   ![Breakout Game](GIFs/BreakoutGame.gif)
    
 The Breakout Game project showcases the implementation of a classic Breakout game using OpenGL. It involves creating game mechanics, collision detection, and rendering.
 
 ### 4. Normal Mapping
    
-   ![Normal Mapping](NormalMapping.gif)
+   ![Normal Mapping](GIFs/NormalMapping.gif)
    
 Normal mapping is a technique used to add fine surface detail to 3D models without increasing their polygon count by using a 2D texture to store per-fragment normals. These normals are used to modify the lighting calculations and create the illusion of depth and detail on the surface.
 
 ### 5. Phong Toon Cook-Torrance
    
-   ![Phong Toon Cook-Torrance](PhongToonCookTorrance.gif)
+   ![Phong Toon Cook-Torrance](GIFs/PhongToonCookTorrance.gif)
    
 Phong, toon, and Cook-Torrance shaders are techniques used in computer graphics to create stylized and non-photorealistic rendering of 3D objects. These techniques modify the way light interacts with the surface of the object to create a cartoon-like or matte appearance. 
 
 ### 6. MIP Mapping
    
-   ![MIP Mapping](MIPMapping.gif)
+   ![MIP Mapping](GIFs/MIPMapping.gif)
    
 MIP mapping is a technique used to improve texture quality and performance in 3D rendering. This project demonstrates the concept and implementation of MIP mapping.
 
 ### 7. Inverse Kinematics
    
-   ![Inverse Kinematics](InverseKinematics.gif)
+   ![Inverse Kinematics](GIFs/InverseKinematics.gif)
    
 Inverse kinematics is a technique used to calculate joint angles to achieve a desired end effector position. This project explores and demonstrates the principles of inverse kinematics. For more information, you can check out the project repository on [GitHub](https://github.com/liamby/OpenGL-3D-Multi-bone-Inverse-Kinematics).
 
 ### 8. Quaternion Rotation
    
-   ![Quaternion Rotation](QuaternionRotation.gif)
+   ![Quaternion Rotation](GIFs/QuaternionRotation.gif)
    
 Quaternions are used to represent rotations in 3D space. This project explains and illustrates the concept of quaternion rotation.
 

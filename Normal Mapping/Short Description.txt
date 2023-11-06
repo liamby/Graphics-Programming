@@ -1,0 +1,6 @@
+
+The scene demonstrated for this assignment contains a skybox with a cube that has the texture and Normal Map of a brick wall applied to it. 
+The code builds off the work done in the last assignment as well as relying heavily on the learnOpenGL website both for assets for the project such as skyboxes, 
+models and textures as well as code that has been used in the normal mapping shader program as well as in the main.cpp file. 
+Most of the code in the main.cpp file has been altered from Lab 04 of the Computer Graphics module, 
+however, regions such as the TEXTURE_FUNCTIONS region and loadCubemap functions have been taken from LearnOpenGL website.

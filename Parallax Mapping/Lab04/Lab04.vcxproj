@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C1D2FF96-EEAD-48AB-869C-E0895D72B4A3}</ProjectGuid>
+    <RootNamespace>Lab04</RootNamespace>
+    <ProjectName>src</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\build\executables\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\build\intermediate\$(Configuration)\</IntDir>
+    <IncludePath>C:\Users\john\Downloads\Parallax Mapping Demo - Copy %283%29 - Copy - Copy\libs\GLFW\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\john\Downloads\glfw-3.3.8.bin.WIN32\glfw-3.3.8.bin.WIN32\lib-vc2022;C:\Users\john\Downloads\Parallax Mapping Demo - Copy %283%29 - Copy - Copy;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\build\executables\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\build\intermediate\$(Configuration)\</IntDir>
+    <IncludePath>C:\Users\john\Downloads\Parallax Mapping Demo - Copy %283%29 - Copy - Copy\libs\GLFW\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\john\Downloads\glfw-3.3.8.bin.WIN32\glfw-3.3.8.bin.WIN32\lib-vc2022;C:\Users\john\Downloads\Parallax Mapping Demo - Copy %283%29 - Copy - Copy;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libs\assimp\include;$(SolutionDir)\libs\glew-1.10.0\include;$(SolutionDir)\libs\freeglut\include;$(SolutionDir)\libs\glm;$(SolutionDir)\libs\glad\include;$(SolutionDir)\libs\STB;$(SolutionDir)\libs;$(SolutionDir)\libs\imgui;$(SolutionDir)\libs\GLFW\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libs\assimp\lib\Debug;$(SolutionDir)\libs\glew-1.10.0\lib\Release\Win32;$(SolutionDir)\libs\;$(SolutionDir)\libs\freeglut\lib;$(SolutionDir)\GLFW\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;freeglut.lib;glew32.lib;glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libs\assimp\include;$(SolutionDir)\libs\glew-1.10.0\include;$(SolutionDir)\libs\freeglut\include;$(SolutionDir)\libs\glm;$(SolutionDir)\libs\glad\include;$(SolutionDir)\libs\STB;$(SolutionDir)\libs;$(SolutionDir)\libs\imgui;$(SolutionDir)\libs\GLFW\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libs\assimp\lib\Debug;$(SolutionDir)\libs\glew-1.10.0\lib\Release\Win32;$(SolutionDir)\libs\;$(SolutionDir)\libs\freeglut\lib;$(SolutionDir)\GLFW\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;freeglut.lib;glew32.lib;glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libs\imgui\imconfig.h" />
+    <ClInclude Include="..\libs\imgui\imgui.h" />
+    <ClInclude Include="..\libs\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="..\libs\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\libs\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="..\libs\imgui\imgui_internal.h" />
+    <ClInclude Include="..\libs\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\libs\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\libs\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\libs\learnopengl\animation.h" />
+    <ClInclude Include="..\libs\learnopengl\animator.h" />
+    <ClInclude Include="..\libs\learnopengl\animdata.h" />
+    <ClInclude Include="..\libs\learnopengl\assimp_glm_helpers.h" />
+    <ClInclude Include="..\libs\learnopengl\bone.h" />
+    <ClInclude Include="..\libs\learnopengl\camera.h" />
+    <ClInclude Include="..\libs\learnopengl\entity.h" />
+    <ClInclude Include="..\libs\learnopengl\filesystem.h" />
+    <ClInclude Include="..\libs\learnopengl\mesh.h" />
+    <ClInclude Include="..\libs\learnopengl\model.h" />
+    <ClInclude Include="..\libs\learnopengl\model_animation.h" />
+    <ClInclude Include="..\libs\learnopengl\shader.h" />
+    <ClInclude Include="..\libs\learnopengl\shader_c.h" />
+    <ClInclude Include="..\libs\learnopengl\shader_m.h" />
+    <ClInclude Include="..\libs\learnopengl\shader_s.h" />
+    <ClInclude Include="..\libs\learnopengl\shader_t.h" />
+    <ClInclude Include="maths_funcs.h" />
+    <ClInclude Include="stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libs\imgui\imgui.cpp" />
+    <ClCompile Include="..\libs\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\libs\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\libs\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\libs\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\libs\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\libs\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="maths_funcs.cpp" />
+    <ClCompile Include="stb_image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\2.1.basic_lighting.fs" />
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\2.1.basic_lighting.vs" />
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\4.normal_mapping.fs" />
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\4.normal_mapping.vs" />
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\5.1.parallax_mapping.fs" />
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\5.1.parallax_mapping.vs" />
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\5.2.parallax_mapping.fs" />
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\5.2.parallax_mapping.vs" />
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\5.3.parallax_mapping.fs" />
+    <None Include="..\..\Parallax Mapping Demo - Copy\shaders\5.3.parallax_mapping.vs" />
+    <None Include="..\shaders\2.2.basic_lighting.fs" />
+    <None Include="..\shaders\2.2.basic_lighting.vs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

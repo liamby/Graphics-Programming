@@ -1,0 +1,8 @@
+The scene contains three models, surrounded by a skybox from the website learnOpenGL which is used to demonstrate the shader programmes. 
+The first model demostrates reflectance and shows the back of the skybox in the curved surface of the teapot. The second demonstrates the fresnell shader.
+which balances reflection and refraction depending on the viewing angle of the camera, which makes the image on the edge of the teapot appear
+to switch direction as the viewer reaches a flatter angle and refraction turns to reflection. A cube was used to demonstrate the fresnel shader as it was 
+challenging to observe on the curved surface of a teapot. The final effect demonstrates chromatic dispersion which occurs when light refracting through 
+an object gets split up into its different wavelengths. The code for this lab builds off of the codebase which was provided to us by Professor McDonnell last 
+year as part of the module Computer Graphics and the previous Lab 1 assignment as well as code from Joey de Vries' learnOpenGL.  The video demonstration of the 
+the code running can be found on youtube at https://youtu.be/lMdrZj_qNUE. 

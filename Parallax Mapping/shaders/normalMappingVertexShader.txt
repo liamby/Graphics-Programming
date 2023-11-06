@@ -1,0 +1,44 @@
+// adapted from https://learnopengl.com/Advanced-Lighting/Normal-Mapping
+
+#version 330
+
+in vec3 aposition;
+in vec3 anormal;
+in vec2 atexture;
+in vec3 aTangent;
+in vec3 aBitangent;
+
+out vec3 fragmentPositionTS;
+out vec3 lightPosTS;
+out vec3 viewPosTS;
+out vec2 texCoords; 
+out vec3 normalIn;
+
+uniform mat4 view;
+uniform mat4 proj;
+uniform mat4 model;
+
+uniform vec3 lightPos;
+uniform vec3 viewPos;
+uniform int uvScalar;
+
+void main(){
+  texCoords = atexture * uvScalar;
+  vec3 fragmentPosition = vec3(model * vec4(aposition, 1.0));
+  normalIn = mat3(transpose(inverse(model))) * anormal;
+
+  mat3 mVector = transpose(inverse(mat3(model)));
+  vec3 tangent = normalize(mVector * aTangent);
+  vec3 bit_Tangent = normalize(mVector * aBitangent);
+  vec3 normal = normalize(mVector * anormal);
+  mat3 TBN = transpose(mat3(tangent, bit_Tangent, normal));
+
+  fragmentPositionTS = TBN * fragmentPosition;
+  lightPosTS = TBN * lightPos;
+  viewPosTS = TBN * viewPos;
+
+  gl_Position = proj * view * model * vec4(aposition, 1.0);
+}
+
+
+  
