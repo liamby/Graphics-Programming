@@ -3,15 +3,11 @@
 This repository contains multiple projects completed in C++ and GLSL, following the tutorials by Joey DeVries available at [learnOpenGL.com](https://learnopengl.com). These projects were done as part of the course on Computer Graphics at Trinity College Dublin.
 
 ### 1. Parallax Mapping
-   
-   ![Parallax Mapping](parallaxMapping.gif)
-   <div style="display: flex; justify-content: space-between;">
-    <div style="flex: 49%;">
-        <img src="woodenshapes.gif" alt="Wooden Shapes" width="100%">
-    </div>
-    <div style="flex: 49%;">
-        <img src="simpleBrickWall.gif" alt="Simple Brick Wall" width="100%">
-    </div>
+
+![Parallax Mapping](parallaxMapping.gif)
+<div style="display: flex; justify-content: space-between;">
+   <img src="simpleBrickWall.gif" alt="Simple Brick Wall" width="49%">
+   <img src="woodenshapes.gif" alt="Wooden Shapes" width="49%" >
 </div>
 
 ## Parallax Mapping
